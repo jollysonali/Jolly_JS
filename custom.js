@@ -38,5 +38,5 @@ $(function() {
 		$(this).parents("p").removeClass("highlight");
 	});		
 //Annimation! yea! Need to start this...
-   
+   // work on things. 
 });
