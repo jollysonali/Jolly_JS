@@ -39,4 +39,10 @@ $(function() {
 	});		
 //Annimation! yea! Need to start this...
    // work on things. 
+
+ 	$("a").toggle(function(){
+		$(".stuff").hide('slow');
+	}. function(){
+		$(".stuff").show('fast');	
+});
 });
