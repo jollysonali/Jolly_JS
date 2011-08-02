@@ -1,12 +1,41 @@
+/* Typography
+-----------------------------*/
+@font-face {
+	font-family: 'CoquetteRegular';
+		src: url('CoquetteRegular-webfont.eot');
+		src: url('CoquetteRegular-webfont.eot?#iefix') format('embedded-opentype'),
+		     url('CoquetteRegular-webfont.woff') format('woff'),
+		     url('CoquetteRegular-webfont.ttf') format('truetype'),
+		     url('CoquetteRegular-webfont.svg#webfont') format('svg');
+}
+
+/* Lists
+------------------------------*/
+	
+ul, ol, dl, li, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+	
+/* Links
+------------------------------*/
+
+a, a:link {}
+a:visited {}
+a:hover {}
+a:active {}
+
+
 html, body, div, ul {
 	margin: 0;
 	padding: 0;
 }
 
-body {
+body, p, blockquote {
     color: #262626;
 	background: #f4f4f4;
-	font: normal 12px/18px Verdana, sans-serif;
+	font-size: 12px/18px;
+	font-family: 'CoquetteRegular', Arial, sans-serif;
 }
 
 #content {
@@ -22,8 +51,7 @@ body {
 h1 {
 	margin: 30px 0 15px 0;
 	font-size: 30px;
-	font-weight: bold;
-	font-family: Arial;
+	font-family: 'CoquetteRegular', Arial, snas-serif;
 }
 
 h1 span {
@@ -64,14 +92,52 @@ ul {
 	padding-left: 30px;
 }
 
+/* Forms
+------------------------------*/
+
+form, fieldset {
+	margin: 0;
+	padding: 0;
+}
+	
+fieldset { border: 1px solid #000; }
+
+legend {
+	padding: 0;
+	color: #000;
+}
+
+input, textarea, select {
+	margin: 0;
+	padding: 1px;
+	font-size: 100%;
+	font-family: inherit;
+}
+	
+select { padding: 0; }
+
+body {
+	padding: 0 10px;
+	font: normal 100% 'CoquetteRegular', Arial, sans-serif;
+}
+	
+p { margin: 10px 0; }
+
+li { margin-left: 10px; }
+
+h3 { margin: 5px 0; }
+
+.red { background-color: red; }
+.blue { color: blue; }
+.green { color: green; }
+
 #rating {
-	border: 1px solid black;
 	margin: 5px;
 	padding: 5px;
 }
 
 table {
-	border: 1px solid #666;
+	border: 1px solid #111;
 	margin: 20px 0 20px 0 !important;
 }
 
@@ -102,16 +168,15 @@ tr a:hover {
 }
 
 dl dd {
-	margin-left: 10px;
-}
-
-dl dt {
-	font-weight: bold;
+	margin-left: 20px;
+	color: #D9D330;
+	
 }
 
 dl {
-	border: 1px solid black;
+	border: 1px #fc0;
 	margin: 5px;
+	padding: 10px;
 }
 
 .highlight {
@@ -121,4 +186,3 @@ dl {
 .error {
 	background-color: #fee;
 }
-
